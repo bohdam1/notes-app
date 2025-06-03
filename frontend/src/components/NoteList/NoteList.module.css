@@ -1,0 +1,92 @@
+/* src/components/NoteList/NoteList.module.css */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+
+.note {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  
+}
+
+.note:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.content {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background-color: #b02a37;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  .note {
+    padding: 12px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

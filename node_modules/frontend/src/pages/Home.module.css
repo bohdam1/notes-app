@@ -1,0 +1,41 @@
+/* Home.module.css */
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px 16px;
+  font-family: Arial, sans-serif;
+  background-color:rgb(243, 243, 243)
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+.data_con{
+    display: flex;
+    margin-left: 40px;
+}
+.search_con{
+    display: flex;
+    justify-content: center;
+}
+.inputSearch,
+.inputDate {
+  
+  
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputSearch{
+    width: 300px;
+}
+.inputDate {
+    margin-left: 10px;
+  
+}
